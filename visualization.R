@@ -10,9 +10,9 @@ x <- xyz$o3tmean2
 plot(x,y , main = "Correlation of  Ozone Readings and Temprature (°F) in Chicago",
      xlab = "Ozone Readings",
      ylab =  "Temprature (°F) ",
-     col = "grey",
+     col = "blue",
      ylim = c(0,100))
-abline(lm( y ~ x, data = xyz), col = "blue")
+abline(lm( y ~ x, data = xyz), col = "red")
 data = xyz
 model = lm(y ~ x,data = xyz)
 plotNormalHistogram(residuals(model),
